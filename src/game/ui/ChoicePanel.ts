@@ -15,8 +15,10 @@ export class ChoicePanel {
   show(choices: Choice[], state: PlayerState, onChoice: (choice: Choice) => void): void {
     this.clear();
     const visible = choices.filter((choice) => !choice.visibleIf || choice.visibleIf(state));
-    const rowHeight = visible.length >= 4 ? 41 : 48;
-    const buttonHeight = visible.length >= 4 ? 37 : 42;
+    const panelHeight = 168;
+    const rowHeight = Math.floor(panelHeight / Math.max(visible.length, 1));
+    const buttonHeight = Math.max(30, rowHeight - 4);
+    const baseFontSize = visible.length >= 5 ? 12 : 14;
     visible.forEach((choice, index) => {
       const locked = Boolean(choice.require && !choice.require(state));
       const y = index * rowHeight;
@@ -26,12 +28,12 @@ export class ChoicePanel {
       const label = locked ? `LOCKED: ${choice.lockedText ?? choice.label}` : choice.label;
       const text = this.scene.add.text(14, 5, label, {
         fontFamily: '"Courier New", monospace',
-        fontSize: "14px",
+        fontSize: `${baseFontSize}px`,
         color: locked ? "#8b7a91" : "#f9f5ff",
         wordWrap: { width: UI_WIDTH - 28 },
         maxLines: 2,
       });
-      this.fitChoiceText(text, buttonHeight);
+      this.fitChoiceText(text, buttonHeight, baseFontSize);
       btn.add([rect, text]);
       if (!locked) {
         rect.setInteractive({ useHandCursor: true })
@@ -61,8 +63,8 @@ export class ChoicePanel {
     this.container.destroy(true);
   }
 
-  private fitChoiceText(text: Phaser.GameObjects.Text, buttonHeight: number): void {
-    for (let size = 14; size >= 11; size -= 1) {
+  private fitChoiceText(text: Phaser.GameObjects.Text, buttonHeight: number, baseFontSize: number): void {
+    for (let size = baseFontSize; size >= 10; size -= 1) {
       text.setFontSize(size);
       if (text.height <= buttonHeight - 8) return;
     }

@@ -35,7 +35,7 @@ export class EndingScene extends Phaser.Scene {
       fontSize: "22px",
       color: this.ending.kind === "bad" ? "#ff6b9f" : "#8ffcff",
     }).setDepth(20);
-    this.add.text(76, 108, this.ending.title.toUpperCase(), {
+    const titleText = this.add.text(76, 108, this.ending.title.toUpperCase(), {
       fontFamily: '"Courier New", monospace',
       fontSize: "46px",
       color: "#fff37a",
@@ -43,13 +43,15 @@ export class EndingScene extends Phaser.Scene {
       strokeThickness: 4,
       wordWrap: { width: 760 },
     }).setDepth(20);
-    this.add.text(80, 230, this.ending.body.join("\n\n"), {
+    this.fitText(titleText, 760, 100, 46, 30);
+    const bodyText = this.add.text(80, 230, this.ending.body.join("\n\n"), {
       fontFamily: '"Courier New", monospace',
       fontSize: "21px",
       color: "#f6efff",
       lineSpacing: 10,
       wordWrap: { width: 670 },
     }).setDepth(20);
+    this.fitText(bodyText, 670, 310, 21, 15);
 
     this.addButton(82, 592, "RESTART AUDIT", () => {
       store.reset();
@@ -84,5 +86,13 @@ export class EndingScene extends Phaser.Scene {
         AudioManager.get().playSfx("click");
         action();
       });
+  }
+
+  private fitText(text: Phaser.GameObjects.Text, maxWidth: number, maxHeight: number, startSize: number, minSize: number): void {
+    text.setWordWrapWidth(maxWidth);
+    for (let size = startSize; size >= minSize; size -= 1) {
+      text.setFontSize(size);
+      if (text.width <= maxWidth && text.height <= maxHeight) return;
+    }
   }
 }

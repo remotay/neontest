@@ -79,11 +79,12 @@ export class TitleScene extends Phaser.Scene {
       : "Design, writing, implementation, and integration: Codex.\n\nVisual assets: generated with Codex built-in imagegen and finalized locally into public/assets/images.\n\nAudio pipeline: Gemini API / Lyria 3 Pro Preview when GEMINI_API_KEY is present; WebAudio fallback synthesis when it is not.\n\nBuilt with Vite, TypeScript, and Phaser 3.";
     const body = this.add.text(28, 92, text, {
       fontFamily: '"Courier New", monospace',
-      fontSize: "20px",
+      fontSize: "18px",
       color: "#f5edff",
       wordWrap: { width: 640 },
-      lineSpacing: 8,
+      lineSpacing: 6,
     });
+    this.fitText(body, 640, 370, 18, 14);
     this.panel.add([bg, title, body]);
     this.addButton(114, 518, "BACK", () => this.renderMenu());
   }
@@ -111,5 +112,13 @@ export class TitleScene extends Phaser.Scene {
         action();
       });
     this.panel?.add([rect, text]);
+  }
+
+  private fitText(text: Phaser.GameObjects.Text, maxWidth: number, maxHeight: number, startSize: number, minSize: number): void {
+    text.setWordWrapWidth(maxWidth);
+    for (let size = startSize; size >= minSize; size -= 1) {
+      text.setFontSize(size);
+      if (text.width <= maxWidth && text.height <= maxHeight) return;
+    }
   }
 }
