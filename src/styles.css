@@ -1,0 +1,25 @@
+:root {
+  color-scheme: dark;
+  background: #020006;
+  font-family: "Courier New", "Lucida Console", monospace;
+  cursor: crosshair;
+}
+
+html,
+body,
+#game-root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(255, 0, 180, 0.08), transparent 25%),
+    radial-gradient(circle at 80% 80%, rgba(0, 255, 255, 0.06), transparent 30%),
+    #020006;
+}
+
+canvas {
+  display: block;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
