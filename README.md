@@ -34,7 +34,7 @@ Then run:
 npm run generate:audio
 ```
 
-The script uses Gemini API model `lyria-3-pro-preview` for music/SFX generation and writes files into `public/assets/audio`. If the key is missing or a generation job fails, the game still runs with WebAudio fallback drones and synthesized SFX. The script writes `public/assets/audio/generation-status.json`.
+The script uses Gemini API model `lyria-3-pro-preview` through the official Interactions endpoint for music/SFX generation and writes MP3 files into `public/assets/audio`. If the key is missing or a generation job fails, the game still runs with WebAudio fallback drones/SFX. The script writes `public/assets/audio/generation-status.json`.
 
 Official Gemini music generation reference used for the script: https://ai.google.dev/gemini-api/docs/music-generation
 

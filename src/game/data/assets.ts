@@ -64,11 +64,11 @@ export const AUDIO_PATHS = {
   ambient_goderror_loop: "/assets/audio/ambient_goderror_loop.mp3",
   bad_ending_stinger: "/assets/audio/bad_ending_stinger.mp3",
   true_ending_theme: "/assets/audio/true_ending_theme.mp3",
-  click: "/assets/audio/click.wav",
-  choice_hover: "/assets/audio/choice_hover.wav",
-  revelation_stinger: "/assets/audio/revelation_stinger.wav",
-  death_glitch: "/assets/audio/death_glitch.wav",
-  inventory_acquire: "/assets/audio/inventory_acquire.wav",
+  click: "/assets/audio/click.mp3",
+  choice_hover: "/assets/audio/choice_hover.mp3",
+  revelation_stinger: "/assets/audio/revelation_stinger.mp3",
+  death_glitch: "/assets/audio/death_glitch.mp3",
+  inventory_acquire: "/assets/audio/inventory_acquire.mp3",
   ui_static_loop: "/assets/audio/ui_static_loop.mp3",
 } as const;
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-29T02:04:03.036Z",
+  "generatedAt": "2026-04-29T03:33:39.637Z",
   "images": [
     "angel_firewall.png",
     "black_ice_baptism.png",
@@ -45,11 +45,23 @@
     "wet_archive.png"
   ],
   "audio": [
+    "ambient_cathedral_loop.mp3",
+    "ambient_deepnet_loop.mp3",
+    "ambient_goderror_loop.mp3",
+    "bad_ending_stinger.mp3",
+    "choice_hover.mp3",
     "choice_hover.wav",
+    "click.mp3",
     "click.wav",
+    "death_glitch.mp3",
     "death_glitch.wav",
     "generation-status.json",
+    "inventory_acquire.mp3",
     "inventory_acquire.wav",
-    "revelation_stinger.wav"
+    "main_theme.mp3",
+    "revelation_stinger.mp3",
+    "revelation_stinger.wav",
+    "true_ending_theme.mp3",
+    "ui_static_loop.mp3"
   ]
 }

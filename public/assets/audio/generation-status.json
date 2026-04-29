@@ -1,7 +1,8 @@
 {
   "status": "completed",
   "model": "lyria-3-pro-preview",
-  "generatedAt": "2026-04-29T02:03:25.133Z",
+  "transport": "official-rest-interactions",
+  "generatedAt": "2026-04-29T03:22:16.461Z",
   "jobs": [
     {
       "id": "main_theme",
@@ -18,7 +19,7 @@
     {
       "id": "ambient_deepnet_loop",
       "filename": "ambient_deepnet_loop.mp3",
-      "prompt": "abstract digital abyss ambience, granular synth drones, underwater data pulses, distant modem shrieks, slow heartbeat bass, seamless loop",
+      "prompt": "abstract deep network ambience, granular synth drones, underwater data pulses, distant dial tone artifacts, slow heartbeat-like bass, seamless loop",
       "duration": "70 seconds"
     },
     {
@@ -41,31 +42,31 @@
     },
     {
       "id": "click",
-      "filename": "click.wav",
-      "prompt": "short dry retro UI click, subtle static",
+      "filename": "click.mp3",
+      "prompt": "very short crisp retro terminal button tap, tiny static edge, clean interface feedback sound",
       "duration": "1 second"
     },
     {
       "id": "choice_hover",
-      "filename": "choice_hover.wav",
+      "filename": "choice_hover.mp3",
       "prompt": "soft neon hover blip, cyberpunk terminal",
       "duration": "1 second"
     },
     {
       "id": "revelation_stinger",
-      "filename": "revelation_stinger.wav",
-      "prompt": "brief sacred revelation sting, choir swell, glitch shimmer, 4 seconds",
+      "filename": "revelation_stinger.mp3",
+      "prompt": "brief luminous discovery music accent, synthetic choir swell, bright glitch shimmer, four second transition cue",
       "duration": "4 seconds"
     },
     {
       "id": "death_glitch",
-      "filename": "death_glitch.wav",
+      "filename": "death_glitch.mp3",
       "prompt": "violent digital death glitch, distorted zap, static burst, 3 seconds",
       "duration": "3 seconds"
     },
     {
       "id": "inventory_acquire",
-      "filename": "inventory_acquire.wav",
+      "filename": "inventory_acquire.mp3",
       "prompt": "small holy relic pickup chime, glass bell, soft digital sparkle",
       "duration": "2 seconds"
     },
@@ -76,54 +77,19 @@
       "duration": "45 seconds"
     }
   ],
-  "failures": [
-    {
-      "id": "main_theme",
-      "error": "{\"error\":{\"code\":400,\"message\":\"API Key not found. Please pass a valid API key.\",\"status\":\"INVALID_ARGUMENT\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.ErrorInfo\",\"reason\":\"API_KEY_INVALID\",\"domain\":\"googleapis.com\",\"metadata\":{\"service\":\"generativelanguage.googleapis.com\"}},{\"@type\":\"type.googleapis.com/google.rpc.LocalizedMessage\",\"locale\":\"en-US\",\"message\":\"API Key not found. Please pass a valid API key.\"}]}}"
-    },
-    {
-      "id": "ambient_cathedral_loop",
-      "error": "{\"error\":{\"code\":400,\"message\":\"API Key not found. Please pass a valid API key.\",\"status\":\"INVALID_ARGUMENT\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.ErrorInfo\",\"reason\":\"API_KEY_INVALID\",\"domain\":\"googleapis.com\",\"metadata\":{\"service\":\"generativelanguage.googleapis.com\"}},{\"@type\":\"type.googleapis.com/google.rpc.LocalizedMessage\",\"locale\":\"en-US\",\"message\":\"API Key not found. Please pass a valid API key.\"}]}}"
-    },
-    {
-      "id": "ambient_deepnet_loop",
-      "error": "{\"error\":{\"code\":400,\"message\":\"API Key not found. Please pass a valid API key.\",\"status\":\"INVALID_ARGUMENT\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.ErrorInfo\",\"reason\":\"API_KEY_INVALID\",\"domain\":\"googleapis.com\",\"metadata\":{\"service\":\"generativelanguage.googleapis.com\"}},{\"@type\":\"type.googleapis.com/google.rpc.LocalizedMessage\",\"locale\":\"en-US\",\"message\":\"API Key not found. Please pass a valid API key.\"}]}}"
-    },
-    {
-      "id": "ambient_goderror_loop",
-      "error": "{\"error\":{\"code\":400,\"message\":\"API Key not found. Please pass a valid API key.\",\"status\":\"INVALID_ARGUMENT\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.ErrorInfo\",\"reason\":\"API_KEY_INVALID\",\"domain\":\"googleapis.com\",\"metadata\":{\"service\":\"generativelanguage.googleapis.com\"}},{\"@type\":\"type.googleapis.com/google.rpc.LocalizedMessage\",\"locale\":\"en-US\",\"message\":\"API Key not found. Please pass a valid API key.\"}]}}"
-    },
-    {
-      "id": "bad_ending_stinger",
-      "error": "{\"error\":{\"code\":400,\"message\":\"API Key not found. Please pass a valid API key.\",\"status\":\"INVALID_ARGUMENT\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.ErrorInfo\",\"reason\":\"API_KEY_INVALID\",\"domain\":\"googleapis.com\",\"metadata\":{\"service\":\"generativelanguage.googleapis.com\"}},{\"@type\":\"type.googleapis.com/google.rpc.LocalizedMessage\",\"locale\":\"en-US\",\"message\":\"API Key not found. Please pass a valid API key.\"}]}}"
-    },
-    {
-      "id": "true_ending_theme",
-      "error": "{\"error\":{\"code\":400,\"message\":\"API Key not found. Please pass a valid API key.\",\"status\":\"INVALID_ARGUMENT\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.ErrorInfo\",\"reason\":\"API_KEY_INVALID\",\"domain\":\"googleapis.com\",\"metadata\":{\"service\":\"generativelanguage.googleapis.com\"}},{\"@type\":\"type.googleapis.com/google.rpc.LocalizedMessage\",\"locale\":\"en-US\",\"message\":\"API Key not found. Please pass a valid API key.\"}]}}"
-    },
-    {
-      "id": "click",
-      "error": "{\"error\":{\"code\":400,\"message\":\"API Key not found. Please pass a valid API key.\",\"status\":\"INVALID_ARGUMENT\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.ErrorInfo\",\"reason\":\"API_KEY_INVALID\",\"domain\":\"googleapis.com\",\"metadata\":{\"service\":\"generativelanguage.googleapis.com\"}},{\"@type\":\"type.googleapis.com/google.rpc.LocalizedMessage\",\"locale\":\"en-US\",\"message\":\"API Key not found. Please pass a valid API key.\"}]}}"
-    },
-    {
-      "id": "choice_hover",
-      "error": "{\"error\":{\"code\":400,\"message\":\"API Key not found. Please pass a valid API key.\",\"status\":\"INVALID_ARGUMENT\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.ErrorInfo\",\"reason\":\"API_KEY_INVALID\",\"domain\":\"googleapis.com\",\"metadata\":{\"service\":\"generativelanguage.googleapis.com\"}},{\"@type\":\"type.googleapis.com/google.rpc.LocalizedMessage\",\"locale\":\"en-US\",\"message\":\"API Key not found. Please pass a valid API key.\"}]}}"
-    },
-    {
-      "id": "revelation_stinger",
-      "error": "{\"error\":{\"code\":400,\"message\":\"API Key not found. Please pass a valid API key.\",\"status\":\"INVALID_ARGUMENT\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.ErrorInfo\",\"reason\":\"API_KEY_INVALID\",\"domain\":\"googleapis.com\",\"metadata\":{\"service\":\"generativelanguage.googleapis.com\"}},{\"@type\":\"type.googleapis.com/google.rpc.LocalizedMessage\",\"locale\":\"en-US\",\"message\":\"API Key not found. Please pass a valid API key.\"}]}}"
-    },
-    {
-      "id": "death_glitch",
-      "error": "{\"error\":{\"code\":400,\"message\":\"API Key not found. Please pass a valid API key.\",\"status\":\"INVALID_ARGUMENT\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.ErrorInfo\",\"reason\":\"API_KEY_INVALID\",\"domain\":\"googleapis.com\",\"metadata\":{\"service\":\"generativelanguage.googleapis.com\"}},{\"@type\":\"type.googleapis.com/google.rpc.LocalizedMessage\",\"locale\":\"en-US\",\"message\":\"API Key not found. Please pass a valid API key.\"}]}}"
-    },
-    {
-      "id": "inventory_acquire",
-      "error": "{\"error\":{\"code\":400,\"message\":\"API Key not found. Please pass a valid API key.\",\"status\":\"INVALID_ARGUMENT\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.ErrorInfo\",\"reason\":\"API_KEY_INVALID\",\"domain\":\"googleapis.com\",\"metadata\":{\"service\":\"generativelanguage.googleapis.com\"}},{\"@type\":\"type.googleapis.com/google.rpc.LocalizedMessage\",\"locale\":\"en-US\",\"message\":\"API Key not found. Please pass a valid API key.\"}]}}"
-    },
-    {
-      "id": "ui_static_loop",
-      "error": "{\"error\":{\"code\":400,\"message\":\"API Key not found. Please pass a valid API key.\",\"status\":\"INVALID_ARGUMENT\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.ErrorInfo\",\"reason\":\"API_KEY_INVALID\",\"domain\":\"googleapis.com\",\"metadata\":{\"service\":\"generativelanguage.googleapis.com\"}},{\"@type\":\"type.googleapis.com/google.rpc.LocalizedMessage\",\"locale\":\"en-US\",\"message\":\"API Key not found. Please pass a valid API key.\"}]}}"
-    }
-  ]
+  "generatedJobIds": [
+    "main_theme",
+    "ambient_cathedral_loop",
+    "ambient_deepnet_loop",
+    "ambient_goderror_loop",
+    "bad_ending_stinger",
+    "true_ending_theme",
+    "click",
+    "choice_hover",
+    "revelation_stinger",
+    "death_glitch",
+    "inventory_acquire",
+    "ui_static_loop"
+  ],
+  "failures": []
 }
